@@ -3,6 +3,7 @@
  * @see https://v0.dev/t/Dk7bO3qKmNt
  */
 import { Badge } from "@/components/ui/badge";
+import Image from "next/image";
 
 export function Matches() {
   return (
