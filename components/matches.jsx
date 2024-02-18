@@ -13,64 +13,6 @@ export function Matches() {
       </div>
       <div className="space-y-3">
         <div className="flex items-center justify-between">
-          <div className="h-12 flex flex-row items-center justify-center gap-x-[2px] bg-zinc-800">
-            <div className="w-auto h-8 flex items-center justify-center bg-black">
-              <div className="relative h-8 flex flex-row items-center pl-16 pr-4 justify-start overflow-hidden">
-                <Image
-                  alt="Team Logo"
-                  className="absolute left-1.5 top-[50%] -translate-y-[50%] h-12 w-12 z-10"
-                  height={48}
-                  width={48}
-                  src={`https://api.sofascore.app/api/v1/team/${form?.event?.homeTeam?.id}/image`}
-                  style={{
-                    aspectRatio: "1",
-                    objectFit: "cover",
-                  }}
-                />
-                <span className="text-zinc-100 font-extrabold relative">
-                  {form?.event?.homeTeam?.nameCode}
-                </span>
-                <span
-                  className="absolute w-full h-1 top-auto bottom-0 right-0 left-0"
-                  style={{
-                    background: form?.event?.homeTeam?.teamColors?.primary,
-                  }}
-                />
-              </div>
-
-              <div className="h-8 w-8 aspect-square font-bold text-lg flex items-center justify-center bg-white text-black ">
-                {form?.event?.homeScore?.normaltime}
-              </div>
-            </div>
-            <div className="w-auto h-8 flex flex-row-reverse items-center justify-center bg-black">
-              <div className="relative h-8 flex items-center pr-16 pl-4 justify-end overflow-hidden">
-                <Image
-                  alt="Team Logo"
-                  className="absolute right-1.5 top-[50%] -translate-y-[50%] h-12 w-12 z-10"
-                  height={48}
-                  width={48}
-                  src={`https://api.sofascore.app/api/v1/team/${form?.event?.awayTeam?.id}/image`}
-                  style={{
-                    aspectRatio: "1",
-                    objectFit: "cover",
-                  }}
-                />
-                <span className="text-zinc-100 font-extrabold relative">
-                  {form?.event?.awayTeam?.nameCode}
-                </span>
-                <span
-                  className="absolute w-full h-1 top-auto bottom-0 right-0 left-0"
-                  style={{
-                    background: form?.event?.awayTeam?.teamColors?.primary,
-                  }}
-                />
-              </div>
-
-              <div className="h-8 w-8 aspect-square font-bold text-lg flex items-center justify-center bg-white text-black ">
-                {form?.event?.awayScore?.normaltime}
-              </div>
-            </div>
-          </div>
           <div className="flex items-center space-x-2">
             <div className="text-[#8a8a8a] text-xs">21.01.21</div>
             <FlagIcon className="h-4 w-4" />
